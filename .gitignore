@@ -1,4 +1,26 @@
 # env file
 .env
+.env.local
+.env.development
+.env.production
 
+# modules
 node_modules/
+
+# logs
+logs
+*.log
+npm-debug.log*
+
+# os files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# md file
+*.md
+!.README.md
+/generated/prisma
