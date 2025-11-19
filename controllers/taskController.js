@@ -68,7 +68,6 @@ const getTasks = async (req, res) => {
     res.status(200).json({
       success: true,
       count: tasks.length,
-      stats: formattedStats,
       data: { tasks },
     });
   } catch (error) {
