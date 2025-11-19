@@ -27,6 +27,15 @@ const testConnection = async () => {
 
 testConnection();
 
+// health check endpoint
+app.get("/", (req, res) => {
+  res.json({
+    status: "ok",
+    message: "Todo API is running",
+    database: "Neon PostgreSQL",
+  });
+});
+
 // routes
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/tasks", require("./routes/tasks"));
